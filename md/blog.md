@@ -25,7 +25,7 @@ $ grip filename.md 0.0.0.0:80
  * Running on http://0.0.0.0:80/
 ```
 
-Additionally, running the command `grip` will automatically search the current directory for a `README.md` and render the file, if found. Grip also supports the `-b` flag to automatically open the rendered file in your browser, a feature that I am greatly thankful for.
+Additionally, running the command `grip` by itself will automatically search the current directory for a `README.md` and render the file, if found. Grip also supports the `-b` flag to automatically open the rendered file in your browser, a feature that I am greatly thankful for.
 
 Howebver, I find Grip's most powerful feature to be its ability to seamlessly export Markdown files to HTML:
 
@@ -33,8 +33,6 @@ Howebver, I find Grip's most powerful feature to be its ability to seamlessly ex
 $ grip filename.md --export
 Exporting to filename.html
 ```
-
-Control the output name with the second argument:
 
 ```console
 $ grip filename.md --export index.html

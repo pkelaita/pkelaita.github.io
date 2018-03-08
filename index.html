@@ -81,11 +81,10 @@
 <span class="pl-c1"> * Running on http://localhost:80/</span></pre></div>
 <div class="highlight highlight-text-shell-session"><pre>$ <span class="pl-s1">grip filename.md 0.0.0.0:80</span>
 <span class="pl-c1"> * Running on http://0.0.0.0:80/</span></pre></div>
-<p>Additionally, running the command <code>grip</code> will automatically search the current directory for a <code>README.md</code> and render the file, if found. Grip also supports the <code>-b</code> flag to automatically open the rendered file in your browser, a feature that I am greatly thankful for.</p>
+<p>Additionally, running the command <code>grip</code> by itself will automatically search the current directory for a <code>README.md</code> and render the file, if found. Grip also supports the <code>-b</code> flag to automatically open the rendered file in your browser, a feature that I am greatly thankful for.</p>
 <p>Howebver, I find Grip's most powerful feature to be its ability to seamlessly export Markdown files to HTML:</p>
 <div class="highlight highlight-text-shell-session"><pre>$ <span class="pl-s1">grip filename.md --export</span>
 <span class="pl-c1">Exporting to filename.html</span></pre></div>
-<p>Control the output name with the second argument:</p>
 <div class="highlight highlight-text-shell-session"><pre>$ <span class="pl-s1">grip filename.md --export index.html</span>
 <span class="pl-c1">Exporting to index.html</span></pre></div>
 <p>Unfortunately, this program does not come without its fair share of <a href="https://github.com/joeyespo/grip/issues">bugs</a>. Most recently, I ran into an issue last week when Github turned off the TLS1.0, requiring openSSL and Python updates in order to allow Grip to run. This was a version of Python not yet supported by the latest version of Homebrew, so I had to manually reinstall Grip, Python, and openSSL before Grip could run. Others have documented similar HTTP connection errors produced by Grip.</p>
